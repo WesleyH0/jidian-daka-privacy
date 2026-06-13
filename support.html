@@ -1,66 +1,60 @@
-```html id="7mqx2r"
+原来的支持页主要问题是：英文名还是旧的 `Jidian Check-in`，功能说明还不够贴合现在的「轻松打卡 / 记录打卡 / 洞察 / Pro / 保存洞察图 / iCloud / Face ID / CSV 导出」，另外“统计或洞察页面”这种说法可以统一成现在底部导航里的“洞察 / Insights”。
+
+下面是修正后的中英双语 HTML5，可直接复制替换：
+
+```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>极点打卡技术支持 / Jidian Check-in Support</title>
+  <title>极点打卡技术支持 / Jidian Habit Tracker Support</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-      max-width: 820px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 32px 20px 56px;
       line-height: 1.8;
-      color: #222;
-      background: #fff;
+      color: #1f2523;
+      background: #ffffff;
     }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 30px; margin-bottom: 8px; }
     h2 {
-      margin-top: 30px;
-      font-size: 20px;
-      border-top: 1px solid #eee;
-      padding-top: 18px;
-    }
-    p, li {
-      font-size: 16px;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      color: #1677ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .en {
-      color: #444;
-    }
-    .footer {
       margin-top: 36px;
-      color: #666;
-      font-size: 14px;
+      font-size: 22px;
+      border-top: 1px solid #e8eeee;
+      padding-top: 16px;
     }
+    p, li { font-size: 16px; }
+    ul { padding-left: 22px; }
+    li { margin: 10px 0; }
+    a {
+      color: #179c8f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+    .date, .footer { color: #66736f; }
+    .en { color: #44514d; }
+    strong { color: #111817; }
   </style>
 </head>
 
 <body>
-  <h1>极点打卡技术支持 / Jidian Check-in Support</h1>
+  <h1>极点打卡技术支持 / Jidian Habit Tracker Support</h1>
+
+  <p class="date">
+    更新日期：2026年6月13日<br />
+    Last Updated: June 13, 2026
+  </p>
 
   <p>
-    感谢你使用「极点打卡」。如果你在使用过程中遇到问题，或者对功能有任何建议，可以通过以下方式联系我们。
+    感谢你使用「极点打卡」（英文名：Jidian Habit Tracker）。如果你在使用过程中遇到问题，或希望提出功能建议，可以通过本页面了解常见问题并联系我们。
   </p>
 
   <p class="en">
-    Thank you for using Jidian Check-in. If you encounter any issues while using the App, or if you have any suggestions for improving the App, you can contact us using the information below.
+    Thank you for using Jidian Habit Tracker. If you encounter an issue or would like to share feedback, this page provides common help topics and contact information.
   </p>
 
   <h2>联系我们 / Contact Us</h2>
@@ -69,84 +63,140 @@
     邮箱 / Email：764725516@qq.com
   </p>
 
+  <p>
+    为了更快定位问题，建议你在邮件中说明：设备型号、iOS 或 iPadOS 版本、App 版本、问题发生页面，以及可以复现问题的操作步骤。
+  </p>
+
+  <p class="en">
+    To help us investigate faster, please include your device model, iOS or iPadOS version, App version, the screen where the issue happened, and the steps to reproduce the issue.
+  </p>
+
   <h2>常见问题 / Frequently Asked Questions</h2>
 
   <ul>
     <li>
-      <strong>如何创建打卡项目：</strong>打开 App 后点击添加按钮，填写项目名称，并根据需要设置颜色、图标和提醒。
+      <strong>如何创建打卡项目：</strong>点击添加按钮，输入项目名称，选择颜色，并设置打卡方式和频率。图标会根据项目名称自动匹配。
       <br />
-      <span class="en"><strong>How to create a habit item:</strong> Open the App, tap the add button, enter the habit name, and optionally set a color, icon, and reminder.</span>
+      <span class="en"><strong>How do I create a check-in project?</strong> Tap the add button, enter a project name, choose a color, then set the check-in style and frequency. The icon is matched automatically based on the project name.</span>
     </li>
 
     <li>
-      <strong>如何完成今日打卡：</strong>在首页点击对应项目的打卡圆圈，即可完成当天打卡。
+      <strong>轻松打卡和记录打卡有什么区别：</strong>轻松打卡适合喝水、早睡等简单习惯，点击一次即可完成；记录打卡适合健身、学习、复盘等需要留下当天备注的项目。
       <br />
-      <span class="en"><strong>How to complete today’s check-in:</strong> Tap the check-in circle for the corresponding habit item on the home screen to mark it as completed for today.</span>
+      <span class="en"><strong>What is the difference between Quick check-in and Record check-in?</strong> Quick check-in is for simple habits such as drinking water or going to bed early. Record check-in is for projects where you may want to add a note, such as workouts, study, or reviews.</span>
     </li>
 
     <li>
-      <strong>如何添加打卡备注：</strong>你可以使用记录打卡功能，在完成打卡后添加当天备注，例如学习时长、运动内容或当天状态。
+      <strong>如何完成今日打卡：</strong>在「今天」页面点击项目左侧的圆圈即可完成当天打卡。记录打卡项目完成后可以填写当天备注。
       <br />
-      <span class="en"><strong>How to add a check-in note:</strong> You can use the note check-in feature to add a note after completing a habit, such as study duration, workout details, or your daily status.</span>
+      <span class="en"><strong>How do I complete today’s check-in?</strong> On the Today screen, tap the circle next to a project. For Record check-in projects, you can add a note after completing it.</span>
     </li>
 
     <li>
-      <strong>如何设置提醒：</strong>在项目设置中开启本地提醒，并选择提醒时间。提醒会在你的设备本地生成。
+      <strong>如何查看或编辑备注：</strong>进入项目详情页，在日历下方的当日记录区域查看或编辑当天备注。
       <br />
-      <span class="en"><strong>How to set reminders:</strong> Turn on local reminders in the habit item settings and choose a reminder time. Reminders are generated locally on your device.</span>
+      <span class="en"><strong>How do I view or edit notes?</strong> Open the project details screen. You can view or edit the day note below the calendar.</span>
     </li>
 
     <li>
-      <strong>如何查看历史记录：</strong>你可以在日历回顾中查看每一天的打卡情况和备注内容。
+      <strong>如何取消今天完成：</strong>进入项目详情页，在“今天已经完成”区域可以取消当天完成记录。
       <br />
-      <span class="en"><strong>How to view history:</strong> You can view your daily check-in status and notes in the calendar history section.</span>
+      <span class="en"><strong>How do I undo today’s completion?</strong> Open the project details screen and use the completed-today section to undo today’s record.</span>
     </li>
 
     <li>
-      <strong>如何查看统计数据：</strong>你可以在统计或洞察页面查看近期完成趋势，例如近 7 天和近 30 天的完成情况。
+      <strong>如何设置提醒：</strong>进入项目详情页，开启每日提醒并选择提醒时间。提醒会在你的设备本地触发。
       <br />
-      <span class="en"><strong>How to view statistics:</strong> You can view recent completion trends, such as the last 7 days and last 30 days, in the statistics or insights section.</span>
+      <span class="en"><strong>How do I set reminders?</strong> Open the project details screen, enable daily reminders, and choose a time. Reminders are triggered locally on your device.</span>
     </li>
 
     <li>
-      <strong>如何升级高级版：</strong>在 App 内点击升级入口，通过 App Store 内购解锁高级功能。
+      <strong>提醒没有出现怎么办：</strong>请确认系统通知权限已开启，并检查专注模式、勿扰模式、低电量模式或系统通知设置是否限制了提醒。
       <br />
-      <span class="en"><strong>How to upgrade to Premium:</strong> Tap the upgrade entry in the App and unlock premium features through App Store in-app purchase.</span>
+      <span class="en"><strong>What if reminders do not appear?</strong> Please make sure notification permission is enabled, and check Focus mode, Do Not Disturb, Low Power Mode, and system notification settings.</span>
     </li>
 
     <li>
-      <strong>如何恢复购买：</strong>如果你已经购买高级版，可以在升级页面点击恢复购买。
+      <strong>如何查看日历和历史记录：</strong>进入项目详情页，可以查看该项目的完成日期、当前连续、总完成次数和当日备注。
       <br />
-      <span class="en"><strong>How to restore purchases:</strong> If you have already purchased Premium, you can tap Restore Purchases on the upgrade page.</span>
+      <span class="en"><strong>How do I view the calendar and history?</strong> Open the project details screen to view completed dates, current streak, total completions, and day notes.</span>
     </li>
 
     <li>
-      <strong>如何导出数据：</strong>高级版用户可以在相关功能页面将打卡数据导出为 CSV 文件。
+      <strong>洞察页面可以看什么：</strong>免费用户可以查看总览和近 7 天趋势。升级 Pro 后可以查看更完整的趋势、排行、连续记录、项目结构、建议和需要关注的项目。
       <br />
-      <span class="en"><strong>How to export data:</strong> Premium users can export habit data as a CSV file from the relevant feature page.</span>
+      <span class="en"><strong>What can I see in Insights?</strong> Free users can view the overview and recent 7-day trend. Pro users can unlock deeper trends, rankings, streaks, project mix, advice, and items that need attention.</span>
     </li>
 
     <li>
-      <strong>数据是否会上传到服务器：</strong>默认情况下，你的打卡项目、记录、备注和统计数据保存在本地设备中。我们不会要求注册账号，也不会将你的打卡内容上传到我们的服务器。
+      <strong>如何保存洞察图片：</strong>Pro 用户可以在洞察页保存整页洞察图到相册。保存时可能需要照片保存权限。
       <br />
-      <span class="en"><strong>Will my data be uploaded to a server?</strong> By default, your habit items, records, notes, and statistics are stored on your local device. We do not require account registration and do not upload your habit content to our own servers.</span>
+      <span class="en"><strong>How do I save an insights image?</strong> Pro users can save the full insights page to Photos. Photo Library save permission may be required.</span>
     </li>
 
     <li>
-      <strong>iCloud 备份或同步如何工作：</strong>如果你开启 iCloud 私有备份或同步，相关数据可能会通过你自己的 Apple iCloud 账户在你的设备之间同步。该过程由 Apple iCloud 提供支持。
+      <strong>如何结束或重新开启项目：</strong>进入项目详情页，可以结束不再使用的项目；如果误操作，也可以重新开启。
       <br />
-      <span class="en"><strong>How does iCloud backup or sync work?</strong> If you enable private iCloud backup or sync, related data may be synced across your own devices through your Apple iCloud account. This process is provided by Apple iCloud.</span>
+      <span class="en"><strong>How do I end or reopen a project?</strong> Open the project details screen to end a project you no longer use. If it was ended by mistake, you can reopen it.</span>
+    </li>
+
+    <li>
+      <strong>如何升级 Pro：</strong>在 App 内的升级入口通过 App Store 内购解锁 Pro 功能。付款和退款由 Apple App Store 处理。
+      <br />
+      <span class="en"><strong>How do I upgrade to Pro?</strong> Use the upgrade option in the App to unlock Pro through App Store in-app purchase. Payments and refunds are handled by Apple App Store.</span>
+    </li>
+
+    <li>
+      <strong>如何恢复购买：</strong>如果你已经购买 Pro，可以在升级区域点击恢复购买。请确认使用的是购买时的同一个 Apple ID。
+      <br />
+      <span class="en"><strong>How do I restore purchases?</strong> If you already purchased Pro, tap Restore Purchases in the upgrade area. Please make sure you are using the same Apple ID used for the purchase.</span>
+    </li>
+
+    <li>
+      <strong>Pro 包含哪些功能：</strong>Pro 包含无限项目、CSV 数据导出、iCloud 私有备份、Face ID 隐私锁、高级统计和保存洞察图片等功能。
+      <br />
+      <span class="en"><strong>What does Pro include?</strong> Pro includes unlimited projects, CSV export, iCloud private backup, Face ID privacy lock, advanced stats, and saving insights images.</span>
+    </li>
+
+    <li>
+      <strong>如何导出 CSV：</strong>Pro 用户可以在 App 内导出打卡数据。导出的文件由你自行保存、分享或备份。
+      <br />
+      <span class="en"><strong>How do I export CSV?</strong> Pro users can export check-in data in the App. Exported files are saved, shared, or backed up by you.</span>
+    </li>
+
+    <li>
+      <strong>iCloud 私有备份如何工作：</strong>开启后，数据可能通过你自己的 Apple iCloud 账户在设备之间同步。我们无法读取或管理你的 iCloud 数据。
+      <br />
+      <span class="en"><strong>How does iCloud private backup work?</strong> When enabled, data may sync across your devices through your own Apple iCloud account. We cannot read or manage your iCloud data.</span>
+    </li>
+
+    <li>
+      <strong>Face ID 隐私锁会保存面容数据吗：</strong>不会。Face ID 或 Touch ID 验证由 iOS 系统完成，App 不会获取或保存你的生物识别数据。
+      <br />
+      <span class="en"><strong>Does Face ID privacy lock store biometric data?</strong> No. Face ID or Touch ID authentication is handled by iOS. The App does not access or store your biometric data.</span>
+    </li>
+
+    <li>
+      <strong>数据是否会上传到服务器：</strong>默认情况下，你的打卡项目、记录、备注和统计数据保存在本地设备。我们不要求注册账号，也不使用自有服务器保存你的打卡内容。
+      <br />
+      <span class="en"><strong>Will my data be uploaded to a server?</strong> By default, your projects, records, notes, and statistics are stored locally on your device. We do not require account registration and do not use our own server to store your check-in content.</span>
+    </li>
+
+    <li>
+      <strong>如何切换语言：</strong>你可以在设置页面选择语言，也可以跟随系统语言。
+      <br />
+      <span class="en"><strong>How do I change the language?</strong> You can choose a language in Settings or let the App follow the system language.</span>
     </li>
   </ul>
 
   <h2>问题反馈 / Feedback</h2>
 
   <p>
-    如果你发现 App 无法正常使用、购买或恢复购买失败、提醒无法触发、数据导出异常，或者有其他功能建议，欢迎通过邮箱联系我们。为了更快定位问题，建议你在邮件中说明设备型号、iOS 版本、App 版本以及遇到问题的具体操作步骤。
+    如果你遇到购买或恢复购买失败、提醒不触发、iCloud 同步异常、CSV 导出失败、Face ID 隐私锁无法使用、洞察图片保存失败等问题，请通过邮箱联系我们。
   </p>
 
   <p class="en">
-    If the App does not work properly, if purchase or restore purchase fails, if reminders do not trigger, if data export does not work as expected, or if you have other suggestions, please contact us by email. To help us identify the issue faster, please include your device model, iOS version, App version, and the steps that led to the issue.
+    If purchase or restore purchase fails, reminders do not trigger, iCloud sync does not work, CSV export fails, Face ID privacy lock is unavailable, or saving insights images does not work, please contact us by email.
   </p>
 
   <h2>隐私政策 / Privacy Policy</h2>
@@ -157,12 +207,12 @@
   </p>
 
   <p class="en">
-    You can view the Privacy Policy for Jidian Check-in here:
+    You can view the Privacy Policy for Jidian Habit Tracker here:
     <a href="https://wesleyh0.github.io/jidian-daka-privacy/privacy.html">View Privacy Policy</a>
   </p>
 
   <p class="footer">
-    © 极点打卡 / Jidian Check-in
+    © 极点打卡 / Jidian Habit Tracker
   </p>
 </body>
 </html>
