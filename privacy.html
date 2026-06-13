@@ -1,63 +1,48 @@
+原来的页面整体方向是对的，但有几个地方需要修正：
+
+1. 英文名还是 `Jidian Check-in`，现在应统一为 `Jidian Habit Tracker`。
+2. 需要补充内购说明：购买、退款、付款信息由 Apple 处理，App 不保存银行卡或支付信息。
+3. 需要更清楚说明高级统计、洞察图片保存、CSV 导出、iCloud 私有备份、Face ID 隐私锁的隐私边界。
+4. “我们不收集任何信息”这类表述要更谨慎，改成“我们没有自有服务器收集个人身份信息”，因为系统权限、Apple 内购、iCloud 都属于系统/Apple 侧处理。
+5. 中英文可以更正式一些，适合 App Store 审核和网页展示。
+
+下面是可直接替换的 HTML5 版本：
+
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>极点打卡隐私政策 / Jidian Check-in Privacy Policy</title>
+  <title>极点打卡隐私政策 / Privacy Policy for Jidian Habit Tracker</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 32px 20px 56px;
       line-height: 1.8;
-      color: #222;
-      background: #fff;
+      color: #1f2523;
+      background: #ffffff;
     }
-    h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 30px; margin-bottom: 8px; }
     h2 {
       font-size: 22px;
       margin-top: 38px;
-      padding-top: 10px;
-      border-top: 1px solid #eee;
+      padding-top: 12px;
+      border-top: 1px solid #e8eeee;
     }
-    h3 {
-      font-size: 18px;
-      margin-top: 22px;
-      margin-bottom: 8px;
-    }
-    p {
-      font-size: 16px;
-      margin: 12px 0;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    li {
-      margin: 8px 0;
-      font-size: 16px;
-    }
-    .date {
-      color: #666;
-      margin-bottom: 28px;
-    }
-    .en {
-      color: #444;
-    }
-    .footer {
-      margin-top: 36px;
-      color: #666;
-      font-size: 14px;
-    }
+    p, li { font-size: 16px; }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .date, .footer { color: #66736f; }
+    .en { color: #44514d; }
+    strong { color: #111817; }
   </style>
 </head>
 
 <body>
-  <h1>极点打卡隐私政策 / Privacy Policy for Jidian Check-in</h1>
+  <h1>极点打卡隐私政策 / Privacy Policy for Jidian Habit Tracker</h1>
 
   <p class="date">
     更新日期：2026年6月13日<br />
@@ -67,183 +52,140 @@
   </p>
 
   <p>
-    欢迎使用「极点打卡」。我们非常重视你的隐私和数据安全。本隐私政策用于说明「极点打卡」如何处理你的信息，以及你在使用本 App 时享有的相关权利。
+    欢迎使用「极点打卡」（英文名：Jidian Habit Tracker）。我们重视你的隐私。本隐私政策说明本 App 如何处理你的打卡项目、记录、备注、提醒、统计和相关数据。
   </p>
-
   <p class="en">
-    Welcome to Jidian Check-in. We value your privacy and data security. This Privacy Policy explains how Jidian Check-in handles your information and describes your rights when using the App.
+    Welcome to Jidian Habit Tracker. We value your privacy. This Privacy Policy explains how the App handles your check-in projects, records, notes, reminders, statistics, and related data.
   </p>
 
-  <h2>一、我们如何处理你的数据 / How We Handle Your Data</h2>
-
+  <h2>一、本地优先 / Local-First Design</h2>
   <p>
-    「极点打卡」是一款本地优先的极简习惯打卡工具。你可以创建打卡项目、记录完成日期、添加备注、设置提醒、查看日历回顾和统计信息。
+    极点打卡是一款本地优先的习惯打卡工具。默认情况下，你创建的打卡项目、完成记录、备注、提醒设置、项目状态、颜色、图标和统计数据保存在你的设备本地。
   </p>
-
   <p class="en">
-    Jidian Check-in is a local-first, minimalist habit tracking app. You can create habits, record completion dates, add notes, set reminders, and view calendar history and statistics.
+    Jidian Habit Tracker is a local-first habit tracking app. By default, your projects, completion records, notes, reminders, project status, colors, icons, and statistics are stored locally on your device.
   </p>
-
   <p>
-    在默认情况下，你在 App 中创建的打卡项目、打卡记录、备注内容、提醒设置、项目状态和统计数据仅保存在你的设备本地。我们不会要求你注册账号，也不会将你的打卡内容上传到我们的服务器。
+    我们不要求你注册账号，也不运营用于保存你打卡内容的自有服务器。我们不会出售、出租或公开你的打卡内容。
   </p>
-
   <p class="en">
-    By default, the habits, check-in records, notes, reminder settings, item status, and statistics you create in the App are stored only on your device. We do not require account registration, and we do not upload your habit data to our own servers.
+    We do not require account registration and do not operate our own server to store your check-in content. We do not sell, rent, or publicly disclose your check-in content.
   </p>
 
-  <h2>二、我们收集哪些信息 / Information We Collect</h2>
+  <h2>二、我们处理的数据 / Data Processed by the App</h2>
+  <p>为了提供功能，App 会在你的设备上处理以下数据：</p>
+  <p class="en">To provide its features, the App may process the following data on your device:</p>
+  <ul>
+    <li>打卡项目名称、频率、颜色、图标、状态和打卡方式。<br /><span class="en">Project names, frequency, colors, icons, status, and check-in style.</span></li>
+    <li>完成日期、连续记录、总完成次数和统计结果。<br /><span class="en">Completion dates, streaks, total completions, and statistics.</span></li>
+    <li>你主动填写的当日备注。<br /><span class="en">Day notes that you choose to enter.</span></li>
+    <li>本地提醒时间和提醒开关。<br /><span class="en">Local reminder time and reminder settings.</span></li>
+    <li>高级版功能状态，例如是否已解锁 Pro。<br /><span class="en">Pro entitlement status, such as whether Pro features are unlocked.</span></li>
+  </ul>
 
-  <p>
-    在当前版本中，「极点打卡」不会主动收集可用于识别你个人身份的信息。
-  </p>
-
-  <p class="en">
-    In the current version, Jidian Check-in does not actively collect information that can be used to personally identify you.
-  </p>
-
-  <p>
-    我们不会收集你的姓名、手机号、邮箱、通讯录、精确位置、聊天内容或其他敏感个人信息。我们也不会将你的打卡内容公开给其他用户。
-  </p>
-
-  <p class="en">
-    We do not collect your name, phone number, email address, contacts, precise location, chat content, or other sensitive personal information. We also do not make your habit records public to other users.
-  </p>
-
-  <p>
-    如果你使用系统提供的 iCloud 私有备份或同步功能，你的打卡数据可能会通过你自己的 Apple iCloud 账户在你的设备之间同步。该同步过程由 Apple 的 iCloud 服务提供支持，我们无法读取、管理或访问你的 iCloud 账户内容。
-  </p>
-
-  <p class="en">
-    If you use the private iCloud backup or sync feature provided by the system, your habit data may be synced across your own devices through your Apple iCloud account. This sync process is provided by Apple’s iCloud service. We cannot read, manage, or access the contents of your iCloud account.
-  </p>
-
-  <h2>三、权限使用说明 / App Permissions</h2>
-
-  <p>为了提供部分功能，App 可能会请求以下系统权限：</p>
-
-  <p class="en">To provide certain features, the App may request the following system permissions:</p>
-
+  <h2>三、权限使用 / App Permissions</h2>
   <ul>
     <li>
-      <strong>通知权限：</strong>用于向你发送本地打卡提醒。提醒内容仅在你的设备上生成和显示，不会上传到我们的服务器。
-      <br />
-      <span class="en"><strong>Notification Permission:</strong> Used to send local habit reminders. Reminder content is generated and displayed on your device only and is not uploaded to our servers.</span>
+      <strong>通知权限：</strong>用于发送本地打卡提醒。提醒由你的设备生成，不会上传到我们的服务器。<br />
+      <span class="en"><strong>Notifications:</strong> Used to send local check-in reminders. Reminders are generated on your device and are not uploaded to our servers.</span>
     </li>
-
     <li>
-      <strong>Face ID 或 Touch ID 权限：</strong>用于开启隐私锁功能，保护你的本地打卡记录。身份验证过程由 iOS 系统完成，我们不会获取或保存你的面容、指纹或其他生物识别数据。
-      <br />
-      <span class="en"><strong>Face ID or Touch ID Permission:</strong> Used for the privacy lock feature to protect your local habit records. Authentication is handled by iOS. We do not obtain or store your face, fingerprint, or other biometric data.</span>
+      <strong>Face ID / Touch ID：</strong>用于隐私锁。身份验证由 iOS 系统完成，我们不会获取或保存你的面容、指纹或其他生物识别数据。<br />
+      <span class="en"><strong>Face ID / Touch ID:</strong> Used for the privacy lock feature. Authentication is handled by iOS. We do not access or store your face, fingerprint, or other biometric data.</span>
     </li>
-
     <li>
-      <strong>相册保存权限：</strong>用于将统计图片或分享图片保存到你的相册。只有在你主动点击保存图片时，App 才会使用该权限。
-      <br />
-      <span class="en"><strong>Photo Library Save Permission:</strong> Used to save statistics images or sharing images to your photo library. The App uses this permission only when you actively choose to save an image.</span>
+      <strong>照片保存权限：</strong>用于在你主动点击保存时，将洞察页或统计图片保存到相册。<br />
+      <span class="en"><strong>Photo Library Save Permission:</strong> Used only when you choose to save an insights or statistics image to Photos.</span>
     </li>
   </ul>
 
-  <h2>四、CSV 导出与数据备份 / CSV Export and Data Backup</h2>
-
+  <h2>四、iCloud 私有备份 / iCloud Private Backup</h2>
   <p>
-    高级版用户可以将打卡数据导出为 CSV 文件。导出的文件由你自行保存、分享或备份。请你注意妥善保管导出的文件，避免将包含个人习惯记录的数据发送给不可信的第三方。
+    如果你开启 iCloud 私有备份或同步，相关数据可能通过你自己的 Apple iCloud 账户在你的设备之间同步。该功能由 Apple 提供。我们无法读取、管理或访问你的 iCloud 账户内容。
   </p>
-
   <p class="en">
-    Premium users may export habit data as a CSV file. The exported file is saved, shared, or backed up by you. Please keep exported files safe and avoid sending files containing personal habit records to untrusted third parties.
+    If you enable iCloud private backup or sync, related data may be synced across your devices through your own Apple iCloud account. This service is provided by Apple. We cannot read, manage, or access the contents of your iCloud account.
   </p>
 
+  <h2>五、内购与付款 / In-App Purchases and Payments</h2>
   <p>
-    如果你开启 iCloud 私有备份或同步，相关数据仅用于你自己的设备同步和备份。我们不会建立独立账号系统，也不会通过自有服务器存储你的打卡内容。
+    极点打卡可能提供 Pro 高级版内购。购买、付款、退款、订阅或交易记录由 Apple App Store 处理。我们不会收集或保存你的银行卡号、支付账号或 Apple ID 密码。
   </p>
-
   <p class="en">
-    If you enable private iCloud backup or sync, the related data is used only for syncing and backing up data across your own devices. We do not create a separate account system, and we do not store your habit content on our own servers.
+    Jidian Habit Tracker may offer Pro features through in-app purchases. Purchases, payments, refunds, subscriptions, and transaction records are handled by Apple App Store. We do not collect or store your card number, payment account, or Apple ID password.
   </p>
-
-  <h2>五、第三方服务 / Third-Party Services</h2>
-
   <p>
-    当前版本中，「极点打卡」不包含广告 SDK，不使用第三方行为追踪服务，也不会将你的打卡内容出售、出租或分享给第三方。
+    App 可能会在本地保存你的高级版解锁状态，以便提供相应功能。
   </p>
-
   <p class="en">
-    In the current version, Jidian Check-in does not include advertising SDKs, does not use third-party behavioral tracking services, and does not sell, rent, or share your habit content with third parties.
+    The App may store your Pro entitlement status locally to provide the corresponding features.
   </p>
 
+  <h2>六、CSV 导出与图片保存 / CSV Export and Image Saving</h2>
   <p>
-    如果未来版本接入崩溃分析、统计分析、广告、登录或其他第三方服务，我们会在隐私政策中更新相关说明，并按照 App Store 要求更新隐私信息。
+    Pro 用户可以将打卡数据导出为 CSV 文件，也可以保存洞察页图片到相册。导出的文件或保存的图片由你自行管理、分享或备份。请妥善保管包含个人习惯记录的文件和图片。
   </p>
-
   <p class="en">
-    If future versions include crash analytics, usage analytics, advertising, login, or other third-party services, we will update this Privacy Policy accordingly and update the App Store privacy information as required.
+    Pro users may export check-in data as CSV files and save insights images to Photos. Exported files and saved images are managed, shared, or backed up by you. Please keep files and images containing personal habit records safe.
   </p>
 
-  <h2>六、儿童隐私 / Children’s Privacy</h2>
-
+  <h2>七、第三方服务 / Third-Party Services</h2>
   <p>
-    「极点打卡」不面向儿童主动收集个人信息。由于当前版本不要求注册账号，也不会主动收集可识别个人身份的信息，我们不会有意收集儿童个人信息。
+    当前版本不包含广告 SDK，不使用第三方行为追踪服务，也不会将你的打卡内容出售给第三方。
   </p>
-
   <p class="en">
-    Jidian Check-in does not knowingly collect personal information from children. Since the current version does not require account registration and does not actively collect personally identifiable information, we do not intentionally collect children’s personal information.
+    The current version does not include advertising SDKs, does not use third-party behavioral tracking services, and does not sell your check-in content to third parties.
   </p>
-
-  <h2>七、数据删除 / Data Deletion</h2>
-
   <p>
-    你可以在 App 内删除打卡项目、结束项目或删除本地数据。删除后，相关数据将从当前设备中移除。
+    App 使用 Apple 提供的系统能力，例如 App Store 内购、iCloud、通知、照片保存和生物识别验证。这些系统服务受 Apple 的隐私政策和系统设置管理。
   </p>
-
   <p class="en">
-    You can delete habit items, end habit items, or delete local data within the App. After deletion, the related data will be removed from the current device.
+    The App uses Apple-provided system features such as App Store in-app purchases, iCloud, notifications, photo saving, and biometric authentication. These system services are governed by Apple’s privacy policy and device settings.
   </p>
 
+  <h2>八、数据删除 / Data Deletion</h2>
   <p>
-    如果你启用了 iCloud 私有备份或同步，部分数据可能会按照 Apple iCloud 的同步和备份机制在你的 Apple 账户中保留或同步。你可以通过系统设置中的 iCloud 相关功能管理这些数据。
+    你可以在 App 内删除项目、结束项目、修改备注或删除相关记录。你也可以通过删除 App 来移除保存在当前设备上的本地数据。
   </p>
-
   <p class="en">
-    If you have enabled private iCloud backup or sync, some data may remain or continue to sync through Apple’s iCloud backup and sync mechanisms under your Apple account. You can manage such data through the iCloud settings on your device.
+    You can delete projects, end projects, edit notes, or remove related records in the App. You may also delete the App to remove local data stored on the current device.
   </p>
-
-  <h2>八、适用地区 / Availability</h2>
-
   <p>
-    「极点打卡」可以面向中国大陆及其他国家或地区的用户使用。无论你在哪个地区使用本 App，我们都会按照本隐私政策说明的方式处理你的数据。
+    如果你开启了 iCloud 私有备份或同步，部分数据可能仍按照 Apple iCloud 的机制保留或同步。你可以在系统 iCloud 设置中管理相关数据。
   </p>
-
   <p class="en">
-    Jidian Check-in may be used by users in Mainland China and other countries or regions. Regardless of where you use the App, we handle your data as described in this Privacy Policy.
+    If iCloud private backup or sync is enabled, some data may remain or continue to sync according to Apple’s iCloud mechanisms. You can manage related data in your device’s iCloud settings.
   </p>
 
-  <h2>九、隐私政策更新 / Updates to This Privacy Policy</h2>
-
+  <h2>九、儿童隐私 / Children’s Privacy</h2>
   <p>
-    我们可能会根据 App 功能变化、法律法规要求或 App Store 审核要求更新本隐私政策。更新后的隐私政策将在本页面发布，并以页面显示的更新日期为准。
+    极点打卡不面向儿童主动收集个人信息。由于 App 不要求注册账号，也不通过自有服务器收集个人身份信息，我们不会有意收集儿童个人信息。
   </p>
-
   <p class="en">
-    We may update this Privacy Policy from time to time due to changes in App features, legal requirements, or App Store review requirements. The updated Privacy Policy will be posted on this page, and the updated date shown on this page will apply.
+    Jidian Habit Tracker does not knowingly collect personal information from children. Since the App does not require account registration and does not collect personally identifiable information through our own servers, we do not intentionally collect children’s personal information.
   </p>
 
-  <h2>十、联系我们 / Contact Us</h2>
-
+  <h2>十、政策更新 / Updates</h2>
   <p>
-    如果你对本隐私政策或数据处理方式有任何疑问，可以通过以下方式联系我们：
+    我们可能会因功能变化、法律法规要求或 App Store 审核要求更新本隐私政策。更新后的政策会发布在本页面，并以页面显示的更新日期为准。
+  </p>
+  <p class="en">
+    We may update this Privacy Policy due to feature changes, legal requirements, or App Store review requirements. The updated policy will be posted on this page, and the updated date shown above will apply.
   </p>
 
+  <h2>十一、联系我们 / Contact Us</h2>
+  <p>
+    如果你对本隐私政策或数据处理方式有任何疑问，可以通过以下邮箱联系我们：
+  </p>
   <p class="en">
     If you have any questions about this Privacy Policy or how your data is handled, you may contact us at:
   </p>
-
   <p>
     邮箱 / Email：764725516@qq.com
   </p>
 
   <p class="footer">
-    © 极点打卡 / Jidian Check-in
+    © 极点打卡 / Jidian Habit Tracker
   </p>
 </body>
 </html>
